@@ -13,11 +13,11 @@
         <ul class="site-navigation">
           <li><a href="#">Каталог</a>
             <ul class="dropdown-menu">
-              <li><a class="new">Новинки</a></li>
+              <li><a href=""><b>Новинки</b></a></li>
               <li><a href="gllacy-catalog.html">Сливочное</a></li>
-              <li><a>Щербеты</a></li>
-              <li><a>Фруктовый лед</a></li>
-              <li><a>Мелорин</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
             </ul>
           </li>
           <li><a href="#">Доставка и оплата</a></li>
@@ -26,13 +26,22 @@
 
         <div class="user-navigation">
           <a href="#">Поиск</a>
-          <!--Здесь будет форма для ПОИСКА-->
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <div class="search">
+              <input type="search" name="search" placeholder="Что ищем?" alt="Поиск по сайту">
+            </div>
+          </form>
           <a href="#">Вход</a>
-          <!--Здесь будет форма для ИДЕТИФИКАЦИИ-->
-          <a href="#">Забыли пароль?</a>
-          <a href="#">Новая регистрация</a>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <div class="form">
+              <input type="email" name="email" placeholder="Электронная почта" alt="Ввод email">
+              <input type="password" name="password" placeholder="Пароль" alt="Ввод пароля">
+              <button type="submit">Войти</button>
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </div>
+          </form>
           <a href="#">Корзина</a>
-          <!--Здесь будет форма для ОФОРМЛЕНИЯ ЗАКАЗА-->
         </div>
         <p>С 10 до 20, ежедневно <span class="bold">8 812 450-25-25</span></p>
       </nav>
@@ -74,31 +83,31 @@
         <a href="#">Хочу шоколадки!</a>
       </section>
 
-      <article class="hit">
-        <section class="hit-item">
+      <section class="hit">
+        <article class="hit-item">
           <img src="img/creamy-orange-min.jpg" width="100" height="100" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <p><b>310р/</b>кг</p>
           <h2>Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
-        </section>
+        </article>
 
-        <section class="hit-item">
+        <article class="hit-item">
           <img src="img/creamy-coffee-min.jpg" width="100" height="100" alt="Сливочно-кофейное с кусочками шоколада">
           <p><b>380р/</b>кг</p>
           <h2>Сливочно-кофейное с кусочками шоколада</h2>
-        </section>
+        </article>
 
-        <section class="hit-item">
+        <article class="hit-item">
           <img src="img/creamy-strawberry-min.jpg" width="100" height="100" alt="Сливочно-клубничное с присыпкой из белого шоколада">
           <p><b>355р/</b>кг</p>
           <h2>Сливочно-клубничное с присыпкой из белого шоколада</h2>
-        </section>
+        </article>
 
-        <section class="hit-item">
+        <article class="hit-item">
           <img src="img/creamy-cream-min.jpg" width="100" height="100" alt="Сливочное крем-брюле с карамельной подливкой">
           <p><b>415р/</b>кг</p>
           <h2>Сливочное крем-брюле с карамельной подливкой</h2>
-        </section>
-		</article>
+        </article>
+		</section>
 
 		<section class="shop-info">
       <h2>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
@@ -151,12 +160,16 @@
     </div>
   </footer>
 
-	<section class="modal">
-	  <h2>Мы обязательно вам ответим!</h2>
-	  <button class="feedback-button">Отправить</button>
-	  <!--Здесь будет форма обратной связи-->
-	  <button class="modal-close">X</button>
-	</section>
+	<form action="https://echo.htmlacademy.ru" method="post" class="modal">
+    <div class="form">
+      <h2>Мы обязательно вам ответим!</h2>
+      <input type="text" name="login" placeholder="Как вас зовут?" alt="Ведите ваше имя">
+      <input type="email" name="email" placeholder="Ваша почта для ответа" alt="Ввод email">
+      <textarea rows="6" cols="30" name="textarea" alt="Поле для ввода комментария">Напишите что-инбудь...</textarea>
+      <button class="feedback-button">Отправить</button>
+      <button class="modal-close">X</button>
+    </div>
+	</form>
 
   </body>
 </html>
