@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <nav class="navigation">
         <a>
-          <img style="background: orange;" src="img/logo.svg" width="200" height="50" alt="Логотип интернет-магазина мороженого Gllacy">
+          <img src="img/logo.svg" width="200" height="50" alt="Логотип интернет-магазина мороженого Gllacy">
         </a>
         <ul class="site-navigation">
-          <li><a href="#">Каталог</a>
+          <li><a class="current-main" href="#">Каталог</a>
             <ul class="dropdown-menu">
               <li><a href=""><b>Новинки</b></a></li>
               <li><a href="gllacy-catalog.html">Сливочное</a></li>
@@ -25,25 +28,23 @@
         </ul>
 
         <div class="user-navigation">
-          <a href="#">Поиск</a>
+          <a class="search" href="#">Поиск</a>
           <form action="https://echo.htmlacademy.ru" method="get">
-            <div class="search">
-              <input type="search" name="search" placeholder="Что ищем?" alt="Поиск по сайту">
-            </div>
+            <input type="search" name="search" placeholder="Что ищем?" alt="Поиск по сайту">
           </form>
-          <a href="#">Вход</a>
+          <a class="enter" href="#">Вход</a>
           <form action="https://echo.htmlacademy.ru" method="post">
             <div class="form">
               <input type="email" name="email" placeholder="Электронная почта" alt="Ввод email">
               <input type="password" name="password" placeholder="Пароль" alt="Ввод пароля">
-              <button type="submit">Войти</button>
+              <button class="send" type="submit">Войти</button>
               <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
             </div>
           </form>
-          <a href="#">Корзина</a>
+          <a class="basket" href="#">Пусто</a>
         </div>
-        <p>С 10 до 20, ежедневно <span class="bold">8 812 450-25-25</span></p>
+        <p>С 10 до 20, ежедневно <span>8 812 450-25-25</span></p>
       </nav>
     </header>
 
@@ -64,48 +65,57 @@
           <a href="#">Давайте оба!</a>
         </section>
 
-        <form class="pagination">
-          <input type="radio" name="slider"></input>
-		      <input type="radio" name="slider"></input>
-		      <input type="radio" name="slider"></input>
+        <form>
+          <input type="radio" name="slider" valu="1" checked>1
+		      <input type="radio" name="slider" value="2">2
+		      <input type="radio" name="slider" value="3">3
         </form>
       </article>
 
-      <section class="stock raspberry">
-        <h2>Малинка даром!</h2>
-        <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <a href="#">Хочу варенье!</a>
+      <section class="stock">
+        <div class="raspberry">
+          <h2>Малинка даром!</h2>
+          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <a href="#">Хочу варенье!</a>
+        </div>
+        <div class="chocolate">
+          <h2>Шоколадки даром!</h2>
+          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <a href="#">Хочу шоколадки!</a>
+        </div>
       </section>
 
-      <section class="stock chocolate">
-        <h2>Шоколадки даром!</h2>
-        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-        <a href="#">Хочу шоколадки!</a>
-      </section>
-
-      <section class="hit">
+      <section>
         <article class="hit-item">
+          <div class="hit"></div>
           <img src="img/creamy-orange-min.jpg" width="100" height="100" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-          <p><b>310р/</b>кг</p>
+          <p><b>310&#8381;/</b>кг</p>
           <h2>Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
+          <a class="send" href="#">Быстрый просмотр</a>
         </article>
 
         <article class="hit-item">
+          <div class="hit"></div>
           <img src="img/creamy-coffee-min.jpg" width="100" height="100" alt="Сливочно-кофейное с кусочками шоколада">
-          <p><b>380р/</b>кг</p>
+          <p><b>380&#8381;/</b>кг</p>
           <h2>Сливочно-кофейное с кусочками шоколада</h2>
+          <a class="send" href="#">Быстрый просмотр</a>
         </article>
 
         <article class="hit-item">
+          <div class="hit"></div>
           <img src="img/creamy-strawberry-min.jpg" width="100" height="100" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-          <p><b>355р/</b>кг</p>
+          <p><b>355&#8381;/</b>кг</p>
           <h2>Сливочно-клубничное с присыпкой из белого шоколада</h2>
+          <a class="send" href="#">Быстрый просмотр</a>
         </article>
 
         <article class="hit-item">
+          <div class="hit"></div>
           <img src="img/creamy-cream-min.jpg" width="100" height="100" alt="Сливочное крем-брюле с карамельной подливкой">
-          <p><b>415р/</b>кг</p>
+          <p><b>415&#8381;/</b>кг</p>
           <h2>Сливочное крем-брюле с карамельной подливкой</h2>
+          <a class="send" href="#">Быстрый просмотр</a>
         </article>
 		</section>
 
@@ -125,19 +135,26 @@
     </section>
 
     <section class="stock distribution">
+      <div class="text">
 		    <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <!--Здесь будет форма для ввода почты-->
-    </article>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <input type="email" name="email" placeholder="Электронная почта" alt="Электронная почта">
+          <button class="send" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
 
 		<section class="contacts">
-      <h2>Адрес главного офиса и офлайн-магазина:</h2>
-      <p class="address">ул. Большая Конюшенская<br>19/8,Санкт-Петербург</p>
-      <p>Для звонков по телефону:<b>8 812 450-25-25</b>(с 10 до 20 ежедневно)</p>
-      <a href="#">Форма обратной связи</a>
+      <div class="info">
+        <h2>Адрес главного офиса и офлайн-магазина:</h2>
+        <p class="address">ул. Большая Конюшенская<br>19/8,Санкт-Петербург</p>
+        <p>Для звонков по телефону:<span>8 812 450-25-25</span>(с 10 до 20 ежедневно)</p>
+        <a href="#">Форма обратной связи</a>
+      </div>
     </section>
 	</main>
 
-  <footer class="footer">
+  <footer>
     <div class="social-button">
       <a class="twitter" href="#">Твиттер</a>
       <a class="instagram" href="#">Инстарграм</a>
@@ -154,20 +171,20 @@
 
     <div class="copyright">
       <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-        <img style="background: orange;" src="img/logo-htmlacademy-small.svg" width="50" height="30" alt="Логотип HTML Academy">
+        <img src="img/logo-htmlacademy-small.svg" width="50" height="30" alt="Логотип HTML Academy">
       </a>
-      Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a>&copy; 2018
+      <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a>&copy; 2018</p>
     </div>
   </footer>
 
 	<form action="https://echo.htmlacademy.ru" method="post" class="modal">
-    <div class="form">
+    <div class="modal-form">
       <h2>Мы обязательно вам ответим!</h2>
       <input type="text" name="login" placeholder="Как вас зовут?" alt="Ведите ваше имя">
       <input type="email" name="email" placeholder="Ваша почта для ответа" alt="Ввод email">
       <textarea rows="6" cols="30" name="textarea" alt="Поле для ввода комментария">Напишите что-инбудь...</textarea>
-      <button class="feedback-button">Отправить</button>
-      <button class="modal-close">X</button>
+      <button class="send">Отправить</button>
+      <button class="close">X</button>
     </div>
 	</form>
 
