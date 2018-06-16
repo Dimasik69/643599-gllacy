@@ -7,13 +7,18 @@ body {
   line-height: 22px;
   font-weight: 500;
   color: #fff;
+  background-color:#849d8f;
 
-  background-color: #849d8f;
+  /*background-color: #849d8f;*/
 }
 
 a {
   text-decoration: none;
 }
+
+/*--------------Слфйдер главной страницы--------------*/
+
+/*----------------------------------------------------*/
 
 .site-navigation {
   font-size: 16px;
@@ -54,22 +59,6 @@ a {
   color: #fff;
 }
 
-.site-navigation > li:hover a {
-  font-weight: 700;
-  color: #323232;
-
-  background-color: #f7f6f3;
-}
-
-.site-navigation > li > a:active {
-  box-shadow: inset 0 0 3px #323232;
-}
-
-.site-navigation > li:hover .dropdown-menu {
-  font-weight: 700;
-  color: #323232;
-}
-
 .dropdown-menu > li{
   font-weight: 400;
   color: #323232;
@@ -81,14 +70,6 @@ a {
   font-weight: 700;
 }
 
-.dropdown-menu > li:hover a{
-  background-color: #fbded7;
-}
-
-.dropdown-menu > li:active a{
-  background-color: #f6b5a5;
-}
-
 .site-navigation .current {
   background-color: #d07058;
 }
@@ -97,18 +78,8 @@ a {
   background-repeat: no-repeat;
 }
 
-.user-navigation .search:hover {
-  background-image: url("../img/search-1.svg");
-  background-repeat: no-repeat;
-}
-
 .user-navigation .enter {
   background-image: url("../img/enter.svg");
-  background-repeat: no-repeat;
-}
-
-.user-navigation .enter:hover {
-  background-image: url("../img/enter-1.svg");
   background-repeat: no-repeat;
 }
 
@@ -117,31 +88,85 @@ a {
   background-repeat: no-repeat;
 }
 
-.user-navigation .basket-full {
-  background-image: url("../img/basket-full.svg");
-  background-repeat: no-repeat;
+.user-navigation p span {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 24px;
+  color: #fff;
+}
 
+.user-navigation .products {
   font-size: 14px;
   line-height: 16px;
   color: #323232;
+
+  background-color: #f7f6f3;
+  background-image: url("../img/basket-full.svg");
+  background-repeat: no-repeat;
 }
 
-.user-navigation .orange p,
-.user-navigation .strawberry p,
-.user-navigation .price {
+/*--------------Корзина с товаром--------------*/
+
+.user-navigation .basket-full {
+  background-color: #f8f7f4;
   font-size: 13px;
   line-height: 16px;
   font-weight: 400;
   color: #323232;
 }
 
-.user-navigation .orange span,
-.user-navigation .strawberry span {
-  font-weight: lighter;
-  font-size: 14px;
-  line-height: 16px;
-  color: #323232;
+.user-navigation table {
+  border-bottom: #cacac7 1px solid;
 }
+
+.user-navigation span {
+  color: #a6a6a5;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.user-navigation td {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.user-navigation table a {
+  background-image: url("../img/x.svg");
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
+  padding: 0 10px;
+}
+/*----------------------------*/
+
+
+/*--------------Ползунок--------------*/
+.marker-left,
+.marker-right {
+  width: 4px;
+  height: 4px;
+  border: #fff 8px solid;
+  border-radius: 50%;
+
+  background-color: #ababab;
+}
+
+.line-bold {
+  width: 80px;
+  height: 4px;
+
+  background-color: #f8f7f4;
+}
+
+.line {
+  width: 176px;
+  height: 4px;
+
+  background-color: #d1dad3;
+}
+/*----------------------------*/
 
 .breadcrumbs li {
   font-weight: 400;
@@ -183,26 +208,9 @@ a {
   background-repeat: no-repeat;
 }
 
-input[type="radio"]:first-child {
-  background-color: #849d8f;
-}
-
-input[type="radio"]:nth-child(2) {
-  background-color: #8996a6;
-}
-
-input[type="radio"]:last-child {
-  background-color: #9d8b84;
-}
-
-.gallery a {
-  color: #fff;
-
-  background-color: linear-gradient(to right, #e74a35, #f26843);
-
+.gallary .button {
   font-size: 32px;
   line-height: 44px;
-  font-weight: 700;
 }
 
 .stock {
@@ -221,38 +229,16 @@ input[type="radio"]:last-child {
   font-weight: 700;
 }
 
-.gallery a,
-.stock a,
-.send,
-.contacts a {
+.button {
   color: #fff;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+
   background: linear-gradient(to right, #e74a35, #f26843);
   box-shadow: 0 1px 0 0 #9e4334;
               0 1px 0 0 #975a4b;
-}
-
-.gallery a:hover,
-.stock a:hover,
-.send:hover,
-.contacts a:hover {
-  background: linear-gradient(to right, rgba(231,74,53,0.8), rgba(242,104,67,0.8));
-  box-shadow: 0 1px 0 0 #9e4334;
-              0 1px 0 0 #975a4b;
-}
-
-.gallery a:active,
-.stock a:active,
-.send:active,
-.contacts a:active {
-  background: linear-gradient(to right, #e74a35, #f26843);
-  box-shadow: inset 0 1px 0 0 #c73f2c;
-              inset 0 1px 0 0 #a7301f;
-}
-
-.raspberry {
+}.raspberry {
   background-color: #d36586;
   background-image: url("../img/raspberry-fon-min.jpg");
   background-repeat: no-repeat;
@@ -264,7 +250,9 @@ input[type="radio"]:last-child {
   background-repeat: no-repeat;
 }
 
-.hit {
+.hit::before {
+  display: block;
+  content:"";
   width: 60px;
   height: 60px;
   border-radius: 30px;
@@ -274,19 +262,13 @@ input[type="radio"]:last-child {
   background-repeat: no-repeat;
 }
 
-.hit-item:hover,
-.catalog .item:hover {
-  background-color: 9db1a5;
-  box-shadow: 0 5px 0 5px #9db1a5;
-}
-
-.hit-item p,
+.item p,
 .catalog p {
   font-size: 16px;
   font-weight: 700;
 }
 
-.hit-item b,
+.item b,
 .catalog b {
   font-size: 24px;
   font-weight: 700;
@@ -382,13 +364,13 @@ input[type="radio"]:last-child {
   color: #323232;
 }
 
-.modal-form h2 {
+.modal h2 {
   font-size: 24px;
   line-height: 28px;
   color: #323232;
 }
 
-.modal-form .send {
+.modal .button {
   color: #fefefe;
 }
 
@@ -428,11 +410,6 @@ input[type="radio"]:last-child {
   font-weight: 700;
 }
 
-.useful-information a:hover,
-.copyright a:hover {
-  color: #e84d37;
-}
-
 .copyright p {
   font-size: 12px;
   line-height: 18px;
@@ -462,17 +439,6 @@ input[type="radio"]:last-child {
   color: #323232;
 }
 
-.filter select {
-  background-color: #849d8f;
-  color: #fff;
-  font-size: 14px;
-  line-height: 16px;
-}
-
-.filter select:hover {
-  color: #323232;
-}
-
 .filter button {
   font-size: 16px;
   font-weight: 18px;
@@ -482,6 +448,54 @@ input[type="radio"]:last-child {
   height: 30px;
   border: #fbfcfb 2px solid;
   border-radius:10px;
+}
+
+.filter select {
+  background-color: #849d8f;
+  color: #fff;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+/*--------------Листалка--------------*/
+
+.pagination-list {
+  list-style: none;
+  text-decoration: none;
+}
+
+.pagination-list li{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.pagination-list li a {
+  display: block;
+  font-size: 16px;
+  font-weight: 18px;
+  color: #323232;
+  text-align: center;
+}
+
+.pagination-list .current {
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+/*----------------------------------------------*/
+
+/*--------------Свойства состояний--------------*/
+
+/*.useful-information a:hover,
+.copyright a:hover {
+  color: #e84d37;
+}
+
+.filter select:hover {
+  color: #323232;
 }
 
 .filter button:hover {
@@ -494,3 +508,61 @@ input[type="radio"]:last-child {
   color: #353535;
   box-shadow: insite 0 2px 0 0 #6a6b6a;
 }
+
+.site-navigation > li:hover a {
+  font-weight: 700;
+  color: #323232;
+
+  background-color: #f7f6f3;
+}
+
+.site-navigation > li > a:active {
+  box-shadow: inset 0 0 3px #323232;
+}
+
+.site-navigation > li:hover .dropdown-menu {
+  font-weight: 700;
+  color: #323232;
+}
+
+.dropdown-menu > li:hover a{
+  background-color: #fbded7;
+}
+
+.dropdown-menu > li:active a{
+  background-color: #f6b5a5;
+}
+
+.user-navigation .search:hover {
+  background-image: url("../img/search-1.svg");
+  background-repeat: no-repeat;
+}
+
+.user-navigation .enter:hover {
+  background-image: url("../img/enter-1.svg");
+  background-repeat: no-repeat;
+}
+
+.gallery a:hover,
+.stock a:hover,
+.button:hover,
+.contacts a:hover {
+  background: linear-gradient(to right, rgba(231,74,53,0.8), rgba(242,104,67,0.8));
+  box-shadow: 0 1px 0 0 #9e4334;
+              0 1px 0 0 #975a4b;
+}
+
+.gallery a:active,
+.stock a:active,
+.button:active,
+.contacts a:active {
+  background: linear-gradient(to right, #e74a35, #f26843);
+  box-shadow: inset 0 1px 0 0 #c73f2c;
+              inset 0 1px 0 0 #a7301f;
+}
+
+.hit:hover,
+.catalog .item:hover {
+  background-color: 9db1a5;
+  box-shadow: 0 5px 0 5px #9db1a5;
+}*/
