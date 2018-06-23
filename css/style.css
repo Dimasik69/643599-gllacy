@@ -193,6 +193,7 @@ nav span {
   background-color: #f8f7f4;
   padding: 20px 15px 0 15px;;
   border-radius: 5px;
+  z-index: 10;
 }
 
 .wrap form input {
@@ -244,12 +245,12 @@ nav span {
   border-radius: 5px;
 }
 
-.user-navigation form:nth-of-type(2) input{
+/* .user-navigation form:nth-of-type(2) input{
   width: 240px;
   height: 44px;
   border-radius: 5px;
   box-sizing: border-box;
-}
+} */
 
 .user-navigation input[type="email"],
 .user-navigation input[type="password"] {
@@ -264,6 +265,8 @@ nav span {
   border-radius: 23px;
   font-size: 18px;
   line-height: 24px;
+
+
   padding: 0;
   float: left;
   margin-right: 20px;
