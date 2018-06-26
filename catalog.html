@@ -16,19 +16,24 @@
             <a href="index.html">
               <img src="img/logo.svg" width="160" height="65" alt="Логотип интернет-магазина мороженого Gllacy">
             </a>
-            <ul class="site-navigation">
-              <li><a class="current">Каталог</a>
-                <ul class="dropdown-menu">
-                  <li><a href=""><b>Новинки</b></a></li>
-                  <li><a class="current" href="gllacy-catalog.html">Сливочное</a></li>
-                  <li><a href="#">Щербеты</a></li>
-                  <li><a href="#">Фруктовый лед</a></li>
-                  <li><a href="#">Мелорин</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Доставка и оплата</a></li>
-              <li><a href="#">О Компании</a></li>
-            </ul>
+            <section class="site-navigation">
+              <div  class="wrap">
+                <a class="site-items current" href="#">Каталог</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-menu-item new" href=""><b>Новинки</b></a>
+                  <a class="dropdown-menu-item current">Сливочное</a>
+                  <a class="dropdown-menu-item" href="#">Щербеты</a>
+                  <a class="dropdown-menu-item" href="#">Фруктовый лед</a>
+                  <a class="dropdown-menu-item" href="#">Мелорин</a>
+                </div>
+              </div>
+              <div  class="wrap">
+                <a class="site-items" href="#">Доставка и оплата</a>
+              </div>
+              <div  class="wrap">
+                <a class="site-items" href="#">О Компании</a>
+              </div>
+            </section>
             <section class="user-navigation">
               <div class="wrap">
                 <a class="search linked" href="#">Поиск</a>
@@ -213,20 +218,13 @@
             </article>
           </article>
           <section class="pagination-list">
-          <input type="radio" id="page-1" name="pag" checked>
-          <input type="radio" id="page-2" name="pag">
-          <input type="radio" id="page-3" name="pag">
-          <input type="radio" id="page-4" name="pag">
-          <input type="radio" id="page-5" name="pag">
-          <div class="pagination-controls">
-            <label class="item prev">Вперед</label>
-            <label class="item" for="page-1">1</label>
-            <label class="item" for="page-2">2</label>
-            <label class="item" for="page-3">3</label>
-            <label class="item" for="page-4">4</label>
-            <label class="item" for="page-5">5</label>
-            <label class="item next">Назад</label>
-          </div>
+            <a class="item prev">Вперед</a>
+            <a class="item checked" for="page-1">1</a>
+            <a class="item" for="page-2">2</a>
+            <a class="item" for="page-3">3</a>
+            <a class="item" for="page-4">4</a>
+            <a class="item" for="page-5">5</a>
+            <a class="item next">Назад</a>
           </section>
         </main>
 
