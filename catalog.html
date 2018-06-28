@@ -14,7 +14,7 @@
         <header>
           <nav class="navigation">
             <a href="index.html">
-              <img src="img/logo.svg" width="160" height="65" alt="Логотип интернет-магазина мороженого Gllacy">
+              <img src="img/logo.svg" width="154" height="64" alt="Логотип интернет-магазина мороженого Gllacy">
             </a>
             <section class="site-navigation">
               <div  class="wrap">
@@ -94,7 +94,7 @@
           <h1>Сливочное мороженое</h1>
           <article class="filter">
             <form action="https://echo.htmlacademy.ru" method="post">
-            <fieldset>
+            <fieldset class="sort">
               <legend>Сортировка:</legend>
               <select name="sort">
                 <option>по популярности</option>
@@ -103,41 +103,42 @@
                 <option>по жирности</option>
               </select>
             </fieldset>
-            <fieldset>
+            <fieldset class="range-controls">
               <legend>Цена: 100 руб. - 500 руб.</legend>
-              <div class="bg">
+              <div class="wrap">
                 <div class="marker-left"></div>
-                <div class="line-bold"></div>
-                <div class="line"></div>
                 <div class="marker-right"></div>
+                <div class="line-bold">
+                  <div class="line"></div>
+                </div>
               </div>
-            </fieldset>
-            <fieldset>
+              </fieldset>
+            <fieldset class="fat">
               <legend>Жирность:</legend>
-              <div class="bg">
-                <label for="0%">0%</label>
-                <input type="radio" id="0%" name="fat" value="0%">
-                <label for="10%">10%</label>
-                <input type="radio" id="10%" name="fat" value="10%" checked>
-                <label for="<30%">до30%</label>
-                <input type="radio" id="<30%" name="fat" value="до 30%">
-                <label for=">30%">выше 30%</label>
-                <input type="radio" id=">30%" name="fat" value="выше 30%">
+                <div class="wrap">
+                  <input type="radio" id="0%" name="fat" value="0%">
+                  <label for="0%">0%</label>
+                  <input type="radio" id="10%" name="fat" value="10%" checked>
+                  <label for="10%">10%</label>
+                  <input type="radio" id="<30%" name="fat" value="до 30%">
+                  <label for="<30%">до 30%</label>
+                  <input type="radio" id=">30%" name="fat" value="выше 30%">
+                  <label for=">30%">выше 30%</label>
               </div>
-            </fieldset>
-            <fieldset>
+              </fieldset>
+            <fieldset  class="filler">
               <legend>Наполнители:</legend>
-              <div class="bg">
-                <label for="choco">шоколадные</label>
+              <div class="wrap"">
                 <input type="checkbox" id="choco" name="filler" checked>
-                <label for="sugar">сахарные присыпки</label>
+                <label for="choco">шоколадные</label>
                 <input type="checkbox" id="sugar"name="filler" checked>
-                <label for="fructs">фрукты</label>
+                <label for="sugar">сахарные присыпки</label>
                 <input type="checkbox" id="fructs" name="filler">
-                <label for="surop">сиропы</label>
+                <label for="fructs">фрукты</label>
                 <input type="checkbox" id="surop" name="filler">
-                <label for="jam">джемы</label>
+                <label for="surop">сиропы</label>
                 <input type="checkbox" id="jam" name="filler">
+                <label for="jam">джемы</label>
               </div>
             </fieldset>
             <button type="submit">Применить</button>

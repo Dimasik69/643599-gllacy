@@ -18,7 +18,7 @@
           <nav class="navigation">
 
             <a>
-              <img src="img/logo.svg" width="160" height="65" alt="Логотип интернет-магазина мороженого Gllacy">
+              <img src="img/logo.svg" width="154" height="64" alt="Логотип интернет-магазина мороженого Gllacy">
             </a>
 
             <section class="site-navigation">
@@ -150,20 +150,26 @@
               </form>
             </div>
           </section>
+</main>
+        </div>
+      </div>
 
       		<section class="contacts">
+            <div class="content">
             <div class="info">
               <h2>Адрес главного офиса и офлайн-магазина:</h2>
               <p class="address">ул. Большая Конюшенская<br>19/8,Санкт-Петербург</p>
               <p class="phone">Для звонков по телефону:</p>
               <p class="phone"><span>8 812 450-25-25</span></p>
               <p class="phone">(с 10 до 20 ежедневно)</p>
-              <a class="button" href="#">Форма обратной связи</a>
+              <a class="button login-link" href="login.html">Форма обратной связи</a>
             </div>
+          </div>
           </section>
-        </main>
 
+  <div class="wrapper-footer">
         <footer>
+
           <div class="social-button">
             <a class="twitter" href="#">
               <svg width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
@@ -237,8 +243,9 @@
             </a>
             <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a>&copy; 2018</p>
           </div>
-        </footer>
 
+        </footer>
+</div>
 
 
       </div>
@@ -248,10 +255,28 @@
         <h2>Мы обязательно вам ответим!</h2>
         <button class="modal-close" type="button">Закрыть</button>
         <input type="text" name="login" placeholder="Как вас зовут?" alt="Ведите ваше имя">
-        <input type="email" name="email" placeholder="Ваша почта для ответа" alt="Ввод email">
+        <input type="email" name="email" placeholder="Ваша почта для ответа?" alt="Ввод email">
         <p><textarea rows="6" cols="30" name="textarea" alt="Поле для ввода комментария" placeholder="Напишите что-инбудь..."></textarea></p>
         <button type="submit" class="button">Отправить</button>
       </form>
     </div>
+
+    <script>
+      var link = document.querySelector(".login-link");
+      var popup = document.querySelector(".modal");
+      var close = popup.querySelector(".modal-close");
+      var login = popup.querySelector("[name=login]");
+
+      link.addEventListener("click", function (evt) {
+evt.preventDefault();
+popup.classList.add("modal-show");
+login.focus();
+});
+close.addEventListener("click", function (evt) {
+   evt.preventDefault();
+   popup.classList.remove("modal-show");
+ });
+    </script>
+
   </body>
 </html>
