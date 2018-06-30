@@ -61,13 +61,10 @@ a {
   background-repeat: no-repeat;
   background-position: top center;
   padding-top: 10px;
-  padding-left: 27px;
-  padding-right: 27px;
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
 .wrapper-footer {
-  min-width: 1200px;
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
@@ -75,8 +72,6 @@ a {
   min-width: 1200px;
   background-color: #849d8f;
   padding-top: 10px;
-  /* padding-left: 25px;
-  padding-right: 25px; */
 }
 
 footer {
@@ -162,7 +157,7 @@ footer {
 .dropdown-menu a:last-child {
   margin-bottom: 6px;
   margin-top: 2px;
-
+  margin-right: -2px;
 }
 
 .dropdown-menu-item {
@@ -309,6 +304,11 @@ display: block;
   border-radius: 5px;
   z-index: 10;
   box-shadow: 0 20px 30px 3px rgba(0, 0, 0, 0.4);
+}
+
+input::-webkit-input-placeholder {
+    color: #ccc;
+    font-weight: 400;
 }
 
 .wrap form input {
@@ -469,7 +469,7 @@ display: block;
 }
 
 .user-navigation .wrap:nth-child(3) {
-  padding: 0px 0px 10px 0px;
+  padding: 5px 0px 10px 0px;
   margin-left: 12px;
   }
 
@@ -769,8 +769,9 @@ main,
   margin-right: -25px;
   width: 1200px;
   padding-left: 25px;
-  padding-top: 3px;
-  padding-right: 3px;
+  padding-top: 2px;
+  padding-right: 2px;
+  box-sizing: border-box;
 }
 
 .hit::before {
@@ -877,8 +878,8 @@ main,
   color: #323232;
   border-radius: 15px;
   margin-bottom: 40px;
-  margin-top: 5px;
-  padding: 25px 30px 19px 20px;
+  margin-top: 7px;
+  padding: 25px 30px 15px 20px;
   background-color: #eddfc5;
   background-image: url("../img/waffle-fon-min1.jpg");
 }
@@ -887,6 +888,7 @@ main,
   font-size: 24px;
   line-height: 30px;
   margin: 0;
+  margin-top: 2px;
 }
 
 .shop-info ul {
@@ -1321,6 +1323,7 @@ footer {
 
 .container {
   display: flex;
+  flex-wrap:wrap;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -1391,7 +1394,7 @@ margin-top: -9px;}
 .fat legend,
 .filler legend {
   margin-left: 16px;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 }
 
 .fat legend{
@@ -1404,7 +1407,7 @@ margin-top: -9px;}
 
 .sort select {
   width: 195px;
-  height: 38px;
+  height: 36px;
   border-radius: 19px;
   padding-left: 15px;
   background-color: rgba(255, 255, 255, 0.5);
@@ -1432,8 +1435,8 @@ margin-top: -9px;}
 }
 
 .range-controls .wrap {
-  width: 220px;
-  height: 38px;
+  width: 218px;
+  height: 36px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 19px;
   position: relative;
@@ -1452,13 +1455,13 @@ margin-top: -9px;}
 }
 
 .range-controls .marker-left {
-  top: 10px;
-  left: 35px;
+  top: 8px;
+  left: 33px;
 }
 
 .range-controls .marker-right {
-  top: 10px;
-  right: 68px;
+  top: 8px;
+  right: 67px;
 }
 
 .range-controls .marker-left:hover,
@@ -1485,11 +1488,11 @@ margin-top: -9px;}
 }
 
 .fat .wrap {
-  height: 38px;
+  height: 36px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 19px;
   padding-left: 15px;
-  padding-right: 17px;
+  padding-right: 2px;
 }
 
 .filter .fat input {
@@ -1539,11 +1542,11 @@ margin-top: -9px;}
 }
 
 .filler .wrap {
-  height: 38px;
+  height: 36px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 19px;
   padding-left: 8px;
-  padding-right: 20px;
+  padding-right: 12px;
 }
 
 .filler input {
@@ -1562,8 +1565,8 @@ margin-top: -9px;}
 .filler label::before {
   content: "";
   display: inline-block;
-  width: 19px;
-  height: 19px;
+  width: 17px;
+  height: 17px;
   border: rgba(255, 255, 255, 0.8) 2px solid;
   border-radius: 2px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -1572,10 +1575,26 @@ margin-top: -9px;}
   left: 7px;
 }
 
+.filler .wrap label:nth-child(2) {
+  margin-right: 8px;
+}
+
+.filler .wrap label:nth-child(4) {
+  margin-right: 10px;
+}
+
+.filler .wrap label:nth-child(6) {
+  margin-right: 12px;
+}
+
+.filler .wrap label:nth-child(8) {
+  margin-right: 9px;
+}
+
 .filler label::after {
   content: "";
   width: 28px;
-  height: 23px;
+  height: 22px;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1602,12 +1621,12 @@ margin-top: -9px;}
   font-weight: 18px;
   background-color: rgba(255, 255, 255, 0.5);
   color: #fff;
-  width:140px;
-  height: 38px;
+  width:144px;
+  height: 36px;
   border: #fff 2px solid;
   border-radius:19px;
-  margin-top: 24px;
-  margin-left: 2px;
+  margin-top: 25px;
+  margin-left: -1px;
 }
 
 .filter button:hover {
