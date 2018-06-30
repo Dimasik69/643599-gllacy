@@ -789,6 +789,10 @@ main,
   z-index: 15;
 }
 
+.inner-page .product-list {
+  margin-top: 3px;
+}
+
 .product-list .product-item {
   display: flex;
   flex-direction: column;
@@ -1717,4 +1721,17 @@ margin-top: -9px;}
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 13px;
   cursor: pointer;
+}
+
+.inner-page footer {
+  margin-left: -29px;
+}
+
+.inner-page .usefull-information {
+  margin-left: 50px;
+  margin-top: 8px;
+}
+
+.inner-page .copyright {
+  margin-right: -27px;
 }
