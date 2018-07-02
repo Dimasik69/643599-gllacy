@@ -70,6 +70,10 @@ img {
     padding-top: 10px
 }
 
+.wrapper-footer {
+  min-width: 1200px;
+}
+
 .wrapper,.wrapper-footer {
     -webkit-transition: background-image .5s ease,background-color .5s ease;
     -o-transition: background-image .5s ease,background-color .5s ease;
@@ -274,7 +278,7 @@ img {
     padding: 0;
     min-width: 32px;
     min-height: 32px;
-    border-radius: 50%
+    border-radius: 50%;
 }
 
 .search::before {
@@ -466,7 +470,7 @@ input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
     position: relative;
     border-radius: 35px;
     background-color: rgba(255,255,255,.2);
-    padding: 6px 17px 11px 42px
+    padding: 7px 17px 11px 42px
 }
 
 .basket-with::before {
@@ -990,7 +994,6 @@ main {
     width: 368px;
     border: #d3d3d2 1px solid;
     padding-left: 15px;
-    tabindex: 2;
     border-radius: 3px
 }
 
@@ -1001,6 +1004,7 @@ main {
 
 .contacts {
     width: 100%;
+    min-width: 1200px;
     height: 428px;
     background-image: url(../img/map-min.jpg);
     background-repeat: no-repeat;
@@ -1013,7 +1017,9 @@ main {
     float: right;
     padding: 30px 24px 30px 23px;
     margin-top: 62px;
-    color: #323232
+    color: #323232;
+    box-sizing: border-box;
+    height: inherit;
 }
 
 .contacts .phone,.contacts h2 {
@@ -1591,7 +1597,7 @@ footer {
 .filler label::after {
     content: "";
     width: 28px;
-    height: 22px;
+    height: 23px;
     background-image: url(../img/checkbox-on.svg);
     background-repeat: no-repeat;
     background-position: center;

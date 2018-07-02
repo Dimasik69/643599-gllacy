@@ -38,13 +38,13 @@
             <section class="user-navigation">
               <div class="wrap">
                 <a class="search linked" href="#">Поиск</a>
-                <form action="https://echo.htmlacademy.ru" method="get">
+                <form tabindex="1" action="https://echo.htmlacademy.ru" method="get">
                   <input type="search" name="search" placeholder="Что ищем?">
                 </form>
               </div>
               <div class="wrap">
                 <a class="enter linked" href="#">Вход</a>
-                <form action="https://echo.htmlacademy.ru" method="post">
+                <form tabindex="1" action="https://echo.htmlacademy.ru" method="post">
                   <input type="email" name="email" placeholder="Электронная почта">
                   <input type="password" name="password" placeholder="Пароль">
                   <button class="button" type="submit" formtarget="blunk">Войти</button>
@@ -107,8 +107,8 @@
             <fieldset class="range-controls">
               <legend>Цена: 100 руб. - 500 руб.</legend>
               <div class="wrap">
-                <div class="marker-left"></div>
-                <div class="marker-right"></div>
+                <div class="marker-left" tabindex="0" ></div>
+                <div class="marker-right" tabindex="0" ></div>
                 <div class="line-bold">
                   <div class="line"></div>
                 </div>
@@ -118,28 +118,28 @@
               <legend>Жирность:</legend>
                 <div class="wrap">
                   <input type="radio" id="0%" name="fat" value="0%">
-                  <label for="0%">0%</label>
+                  <label for="0%" tabindex="0" >0%</label>
                   <input type="radio" id="10%" name="fat" value="10%" checked>
-                  <label for="10%">до 10%</label>
+                  <label for="10%" tabindex="0" >до 10%</label>
                   <input type="radio" id="<30%" name="fat" value="до 30%">
-                  <label for="<30%">до 30%</label>
+                  <label for="<30%" tabindex="0" >до 30%</label>
                   <input type="radio" id=">30%" name="fat" value="выше 30%">
-                  <label for=">30%">выше 30%</label>
+                  <label for=">30%" tabindex="0" >выше 30%</label>
               </div>
               </fieldset>
-            <fieldset  class="filler">
+            <fieldset class="filler">
               <legend>Наполнители:</legend>
               <div class="wrap">
                 <input type="checkbox" id="choco" name="filler" checked>
-                <label for="choco">шоколадные</label>
+                <label for="choco" tabindex="0" >шоколадные</label>
                 <input type="checkbox" id="sugar" name="filler" checked>
-                <label for="sugar">сахарные присыпки</label>
+                <label for="sugar" tabindex="0" >сахарные присыпки</label>
                 <input type="checkbox" id="fructs" name="filler">
-                <label for="fructs">фрукты</label>
+                <label for="fructs" tabindex="0" >фрукты</label>
                 <input type="checkbox" id="surop" name="filler">
-                <label for="surop">сиропы</label>
+                <label for="surop" tabindex="0" >сиропы</label>
                 <input type="checkbox" id="jam" name="filler">
-                <label for="jam">джемы</label>
+                <label for="jam" tabindex="0" >джемы</label>
               </div>
             </fieldset>
             <button type="submit">Применить</button>
