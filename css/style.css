@@ -859,7 +859,7 @@ body>input {
   color: #323232;
   margin-top: 4px;
   margin-left: 1px;
-  padding: 25px 30px 16px 20px;
+  padding: 25px 30px 14px 20px;
   background-color: #eddfc5;
   background-image: url(../img/waffle-fon-min1.jpg);
   flex-basis: 1146px;
@@ -956,20 +956,21 @@ body>input {
 }
 
 .border {
-  padding: 4px;
+  padding: 4px 4px 4px 7px;
   background: repeating-linear-gradient(-45deg,#f8f7f4,#f8f7f4 10px,#fe9e90 10px,#fe9e90 20px,#92cdff 20px,#92cdff 30px);
   background-repeat: repeat-x;
 }
 
 .border form {
-  margin-left: 3px;
+  margin-left: 1px;
+  margin-bottom: -2px;
 }
 
 .distribution {
   border-radius: 15px;
   min-height: 210px;
   background-color: #f8f7f4;
-  padding: 28px 11px 36px 20px;
+  padding: 28px 11px 34px 18px;
 }
 
 .distribution input[type="email"]:hover {
@@ -1080,17 +1081,16 @@ body>input {
 
 .footer {
   flex-direction: row;
-  padding-top: 26px;
-  padding-left: 29px;
+  padding-top: 25px;
+  padding-left: 30px;
 }
 
 .social-button {
-  min-width: 186px;
+  min-width: 178px;
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin-left: 1px;
-  margin-top: 11px;
+  margin-top: 12px;
 }
 
 .social-button,
@@ -1127,12 +1127,11 @@ body>input {
 
 .useful-information {
   flex-wrap: wrap;
-  flex-direction: column;
   justify-content: flex-start;
-  width: 330px;
+  width: 335px;
   position: relative;
   height: 42px;
-  margin-left: 21px;
+  margin-left: 29px;
   margin-top: 10px;
 }
 
@@ -1142,6 +1141,7 @@ body>input {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
+  margin-right: 31px;
 }
 
 .useful-information .useful-current::before {
@@ -1150,30 +1150,11 @@ body>input {
   width: 17px;
   height: 15px;
   position: absolute;
-  left: -21px;
+  left: -23px;
   top: 2px;
   background-image: url(../img/for-supplier.svg);
   background-repeat: no-repeat;
   font-weight: 700;
-}
-
-.useful-information a:first-child {
-  margin-top: -1px;
-  margin-left: 2px;
-}
-
-.useful-information a:nth-child(2) {
-  margin-top: 6px;
-    margin-left: 2px;
-}
-
-.useful-information a:nth-child(3) {
-  margin-left: 5px;
-}
-
-.useful-information a:last-child {
-  margin-top: 4px;
-  margin-left: 5px;
 }
 
 .copyright {
@@ -1181,12 +1162,22 @@ body>input {
   line-height: 18px;
   font-weight: 400;
   width: 190px;
-  margin-top: -9px;
+  margin-top: -8px;
   margin-bottom: 25px;
+}
+
+.useful-information a:last-child {
+  margin-left: 13px;
+  margin-top: 1px;
+}
+
+.useful-information a:nth-child(3) {
+  margin-top: 1px;
 }
 
 .copyright a {
   color: #fefefe;
+  margin-left: -1px;
 }
 
 .copyright svg {
@@ -1577,7 +1568,7 @@ body>input {
   border-radius: 50%;
   background-color: rgba(255,255,255,.1);
   top: -2px;
-  right: 9px;
+  right: 10px;
 }
 
 .fat label::after {
@@ -1588,7 +1579,7 @@ body>input {
   background-color: #fff;
   position: absolute;
   top: 6px;
-  left: 7px;
+  left: 6px;
   display: none;
 }
 
@@ -1693,7 +1684,7 @@ body>input {
   width: 144px;
   height: 36px;
   border-radius: 19px;
-  margin-top: 26px;
+  margin-top: 25px;
   margin-left: -1px;
 }
 
@@ -1712,7 +1703,7 @@ body>input {
   display: flex;
   justify-content: flex-end;
   margin: 45px 0 1px;
-  padding: 1px 16px 30px 0;
+  padding: 4px 16px 30px 0;
   min-width: 206px;
   border-bottom: #a9bbb1 1px solid;
 }
@@ -1789,8 +1780,7 @@ body>input {
   margin-left: -29px;
 }
 
-.inner-page .usefull-information {
-  margin-left: 50px;
+.inner-page .useful-information {
   margin-top: 8px;
 }
 
