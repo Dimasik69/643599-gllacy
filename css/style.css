@@ -1195,26 +1195,67 @@ body>input {
   fill: #e84d37;
 }
 
-.modal {
-  width: 480px;
-  background-color: #f8f7f4;
-  border-radius: 11px;
-  padding: 17px 3px 2px 23px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 20;
-  transform: translate(-50%,-500%);
-  transition: .5s;
-  box-shadow: 0 20px 30px 3px rgba(0,0,0,.4);
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
-.contacts .login-link:active .modal {
-  transform: translate(-50%,-250%);
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal {
+  width: 450px;
+  background-color: #f8f7f4;
+  border-radius: 11px;
+  padding: 16px 4px 6px 24px;
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  z-index: 20;
+  box-shadow: 0 20px 30px 3px rgba(0,0,0,.4);
+  display: none;
 }
 
 .modal-show {
-  transform: translate(-50%,-50%);
+  margin-left: -236px;
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal>form {
@@ -1233,8 +1274,8 @@ body>input {
   font-size: 0;
   border: 0;
   position: absolute;
-  top: 17px;
-  right: 26px;
+  top: 15px;
+  right: 15px;
 }
 
 .modal-close::after,
@@ -1261,7 +1302,7 @@ body>input {
   font-size: 24px;
   line-height: 28px;
   color: #323232;
-  margin: 0 0 18px;
+  margin: 0 0 20px;
   vertical-align: top;
 }
 
@@ -1273,6 +1314,10 @@ body>input {
   border-radius: 4px;
   font-size: 16px;
   color: #323232;
+}
+
+.modal input[type="email"] {
+  margin-top: 3px;
 }
 
 .modal input[type="email"],
@@ -1310,12 +1355,12 @@ body>input {
 
 .modal .button {
   float: right;
-  padding: 11px 24px 12px;
+  padding: 10px 23px 10px;
   font-size: 18px;
   text-align: center;
   color: #fefefe;
-  margin-top: 2px;
-  margin-bottom: 23px;
+  margin-top: 5px;
+  margin-bottom: 21px;
 }
 
 .modal-close:active::after,
