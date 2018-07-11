@@ -128,7 +128,7 @@ body {
 }
 
 .site-navigation {
-  max-width: 700px;
+  width: 700px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -210,7 +210,7 @@ body {
 }
 
 .user-navigation {
-  width: 300px;
+  width: 270px;
   font-size: 14px;
   line-height: 14px;
   display: flex;
@@ -344,7 +344,7 @@ textarea::-webkit-input-placeholder {
 
 .user-navigation .enter {
   margin-top: 13px;
-  margin-right: -4px;
+  margin-right: 3px;
   background-color: rgba(255,255,255,.2);
   border-radius: 35px;
   text-decoration: none;
@@ -429,7 +429,7 @@ textarea::-webkit-input-placeholder {
 
 .user-navigation .basket {
   margin-top: 13px;
-  margin-left: 13px;
+  margin-left: 5px;
   background-color: rgba(255,255,255,.2);
   border-radius: 35px;
   text-decoration: none;
@@ -1505,7 +1505,29 @@ body>input {
   color: #fff;
   font-size: 16px;
   width: 195px;
-  -webkit-appearance: menulist;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+.main .filter {
+  position: relative;
+}
+
+.sort select::-ms-expand{
+    display: none;
+}
+
+.scroll::before {
+content: "";
+width: 13px;
+height: 10px;
+background-image: url(../img/icon-down-dir.svg);
+background-repeat: no-repeat;
+position: absolute;
+left: 167px;
+top: 38px;
 }
 
 .sort option {
@@ -1513,11 +1535,14 @@ body>input {
   color: #323232;
 }
 
-.sort:hover>select {
-  background-color: #fff;
+.sort .scroll:hover select {
   color: #323232;
   font-size: 16px;
   font-weight: 500;
+}
+
+.scroll:hover::before {
+  background-image: url(../img/icon-down-dir-hover.svg);
 }
 
 .filter .range-controls {
